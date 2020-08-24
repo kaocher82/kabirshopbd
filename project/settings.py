@@ -29,7 +29,8 @@ STATIC_ROOT = root(env('STATIC_LOCATION', default=os.path.join(BASE_DIR, 'var', 
 
 SHUUP_HOME_CURRENCY = env('SHOP_CURRENCY', default='USD')
 
-ALLOWED_HOSTS = env('ALLOWED_HOSTS', default='*').split(',')
+ALLOWED_HOSTS = env('ALLOWED_HOSTS', 'kabirshopbd.com'
+ , default='*').split(',')
 
 EMAIL_CONFIG = env.email_url('EMAIL_URL', default='smtp://localhost:25')
 vars().update(EMAIL_CONFIG)
