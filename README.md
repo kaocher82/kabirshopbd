@@ -55,8 +55,8 @@ Use this template for simple Django project with Shuup.
         $ source env/bin/activate
         $ pip install django gunicorn
         $ pip freeze > requirements.txt
-        $ django-admin startproject project_name
-        $ python manage.py startapp helloworld
+        $ django-admin startproject kabirshopbd
+        $ python manage.py startapp project
 
     Then, we added a simple view in `hellworld.views`, added the app to
     `project_name.settings.INSTALLED_APPS`, and finally added a URL rule to
